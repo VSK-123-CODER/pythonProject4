@@ -1,13 +1,19 @@
 #Write your code below this line 👇
-import math
-def paint_calc(height,width,coverage):
-    cover=math.ceil((height*width)/5)
-    print(f"You'll need {cover} cans of paint.")
+def name(first_name,last_name):
+  f_name = ""
+  for i in range(0, len(first_name)):
+    if i == 0:
+      f_name += first_name[0].upper()
+      i += 1
+      continue
+    f_name += first_name[i]
 
-#Write your code above this line 👆
-# Define a function called paint_calc() so that the code below works.
+  l_name = ""
+  for i in range(0, len(last_name)):
+    if i == 0:
+      l_name += last_name[0].upper()
+      i += 1
+      continue
+    l_name += last_name[i]
+  print(f_name+" "+l_name)
 
-# 🚨 Don't change the code below 👇
-test_h = int(input("Height of wall: "))
-test_w = int(input("Width of wall: "))
-paint_calc(test_h,test_w,5)
